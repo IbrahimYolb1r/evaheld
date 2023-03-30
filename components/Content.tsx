@@ -1,6 +1,6 @@
 import styles from "../styles/Content.module.css";
-import homeIcon from "./assets/fi_home.svg";
 import ContentCard from "./ContentCard";
+import videoIcon from "./assets/fi_video.svg";
 
 interface ContentData {
   heading: string;
@@ -60,7 +60,7 @@ function Content() {
   return (
     <div className={styles.contentContainer}>
       {contentData.map((data) => (
-        <ContentCard key={data.heading} icon={homeIcon} {...data} />
+        <ContentCard key={data.heading} icon={videoIcon} {...data} />
       ))}
     </div>
   );

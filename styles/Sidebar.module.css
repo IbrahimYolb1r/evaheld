@@ -92,3 +92,9 @@
   padding-top: 16px;
   padding-left: 20px;
 }
+
+.invertedColourIcon {
+  max-width: 14px;
+  max-height: 14px;
+  filter: invert(40%) sepia(50%) saturate(100%) hue-rotate(262deg) brightness(90%) contrast(87%);
+}

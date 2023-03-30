@@ -17,12 +17,12 @@ function ContentLayout({ children, route, heading, subheading, icon }: ContentLa
       <Sidebar />
       <div className={styles.mainWrapper}>
         <main className={styles.main}>
-          <div className={styles.rectangleContainer}>
-            <div className={styles.purpleRectangle}>
+          <div className={styles.headerContainer}>
+            <div className={styles.mainHeader}>
               <div className={styles.headerText}>
                 <div>
                   <Image className={styles.icon} src={icon} alt="icon"/>
-                  <span className={styles.rectangleText}>
+                  <span className={styles.headerText}>
                     Home
                     &nbsp;&nbsp;
                     /
@@ -32,10 +32,10 @@ function ContentLayout({ children, route, heading, subheading, icon }: ContentLa
                 </div>
                 <div>
                   <Image className={styles.icon} src={icon} alt="icon"/>
-                  <span className={styles.rectangleText}>Client user</span>
+                  <span className={styles.headerText}>Client user</span>
                 </div>
               </div>
-              <div className={styles.whiteRectangle}>
+              <div className={styles.subHeader}>
                 <figure className={styles.headingIconWrapper}>
                   <Image className={styles.headingIcon} src={icon} alt="icon"/>
                 </figure>

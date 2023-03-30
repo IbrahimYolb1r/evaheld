@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Content.module.css";
 
-interface linkProps {
+interface LinkProps {
   anchor: string;
   content: string;
 }
@@ -11,7 +11,7 @@ interface ContentCardProps {
   icon: string;
   heading: string;
   subheading: string;
-  links: linkProps[];
+  links: LinkProps[];
 }
 
 function ContentCard({ icon, heading, subheading, links }: ContentCardProps) {
@@ -26,7 +26,7 @@ function ContentCard({ icon, heading, subheading, links }: ContentCardProps) {
       <p className={styles.para}>{subheading}</p>
       <hr className={styles.hr} />
       <div className={styles.buttonMaskWrapper}>
-        {links.map((link: { anchor: string; content: string }) => (
+        {links.map((link: LinkProps) => (
           <Link href={link.anchor} className={styles.buttonMask} key={link.content}>
             {link.content}
           </Link>
