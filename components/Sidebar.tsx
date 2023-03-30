@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/Sidebar.module.css";
 import Image from "next/image";
 import logo from "./assets/logo.svg";
@@ -16,7 +15,7 @@ function Sidebar() {
         <li className={styles.link}>
           <a className={styles.anchor} href="#">
             <div className={styles.iconWrapper}>
-              <Image className={styles.icon} src={homeIcon} />
+              <Image className={styles.icon} src={homeIcon} alt={"icon"} />
             </div>
             Home
           </a>
@@ -24,7 +23,7 @@ function Sidebar() {
         <li className={styles.link}>
           <Link href="/" className={`${styles.active} ${styles.anchor}`}>
             <div className={styles.iconWrapper}>
-              <Image className={styles.icon} src={homeIcon} />
+              <Image className={styles.icon} src={homeIcon} alt={"icon"} />
             </div>
             Create Content
           </Link>
@@ -32,7 +31,7 @@ function Sidebar() {
         <li className={styles.link}>
           <a className={styles.anchor} href="#">
             <div className={styles.iconWrapper}>
-              <Image className={styles.icon} src={homeIcon} />
+              <Image className={styles.icon} src={homeIcon} alt={"icon"} />
             </div>
             My Content
           </a>
@@ -40,7 +39,7 @@ function Sidebar() {
         <li className={styles.link}>
           <a className={styles.anchor} href="#">
             <div className={styles.iconWrapper}>
-              <Image className={styles.icon} src={homeIcon} />
+              <Image className={styles.icon} src={homeIcon} alt="icon" />
             </div>
             Visitor Tributes
           </a>
@@ -48,7 +47,7 @@ function Sidebar() {
         <li className={styles.link}>
           <a className={styles.anchor} href="#">
             <div className={styles.iconWrapper}>
-              <Image className={styles.icon} src={homeIcon} />
+              <Image className={styles.icon} src={homeIcon} alt="icon" />
             </div>
             Memorial Profile
           </a>
@@ -60,7 +59,7 @@ function Sidebar() {
         <li className={styles.link}>
           <a className={styles.anchor} href="#">
             <div className={styles.iconWrapper}>
-              <Image className={styles.icon} src={homeIcon} />
+              <Image className={styles.icon} src={homeIcon} alt="icon" />
             </div>
             My Account
           </a>
@@ -68,7 +67,7 @@ function Sidebar() {
         <li className={styles.link}>
           <a className={styles.anchor} href="#">
             <div className={styles.iconWrapper}>
-              <Image className={styles.icon} src={homeIcon} />
+              <Image className={styles.icon} src={homeIcon} alt="icon" />
             </div>
             My Profile
           </a>
@@ -79,7 +78,7 @@ function Sidebar() {
         <li className={styles.link}>
           <a className={styles.anchor} href="#">
             <div className={styles.iconWrapper}>
-              <Image className={styles.icon} src={homeIcon} />
+              <Image className={styles.icon} src={homeIcon} alt="icon" />
             </div>
             Get Support
           </a>

@@ -1,9 +1,17 @@
 import Image from "next/image";
-import React from "react";
-import styles from "../../styles/Content.module.css";
-import Sidebar from "../Sidebar";
+import { ReactNode } from "react";
+import styles from "../styles/Content.module.css";
+import Sidebar from "./Sidebar.tsx";
 
-function ContentLayout({ children, route, heading, subheading, icon }) {
+type ContentLayoutProps = {
+  children: ReactNode;
+  route: string;
+  heading: string;
+  subheading: string;
+  icon: string;
+};
+
+function ContentLayout({ children, route, heading, subheading, icon }: ContentLayoutProps) {
   return (
     <div className={styles.container}>
       <Sidebar />
@@ -13,7 +21,7 @@ function ContentLayout({ children, route, heading, subheading, icon }) {
             <div className={styles.purpleRectangle}>
               <div className={styles.headerText}>
                 <div>
-                  <Image className={styles.icon} src={icon} />
+                  <Image className={styles.icon} src={icon} alt="icon"/>
                   <span className={styles.rectangleText}>
                     Home
                     &nbsp;&nbsp;
@@ -23,13 +31,13 @@ function ContentLayout({ children, route, heading, subheading, icon }) {
                   </span>
                 </div>
                 <div>
-                  <Image className={styles.icon} src={icon} />
+                  <Image className={styles.icon} src={icon} alt="icon"/>
                   <span className={styles.rectangleText}>Client user</span>
                 </div>
               </div>
               <div className={styles.whiteRectangle}>
                 <figure className={styles.headingIconWrapper}>
-                  <Image className={styles.headingIcon} src={icon} />
+                  <Image className={styles.headingIcon} src={icon} alt="icon"/>
                 </figure>
                 <div className={styles.headingWrapper}>
                   <h4 className={styles.heading}>{heading}</h4>

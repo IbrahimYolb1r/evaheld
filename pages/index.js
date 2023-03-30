@@ -1,11 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import Sidebar from "../components/Sidebar";
 import Content from "../components/Content";
-import styles from "@/styles/Home.module.css";
-import ContentLayout from "@/components/layouts/ContentLayout";
-import homeIcon from "@/components/assets/fi_home.svg"
+import ContentLayout from "../components/layout";
+import homeIcon from "../components/assets/fi_home.svg"
 
 const inter = Inter({ subsets: ["latin"] });
 
