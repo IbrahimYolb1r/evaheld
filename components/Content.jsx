@@ -27,6 +27,8 @@ function Content() {
           </Link>
         </div>
       </div>
+      {/* TODO: Make reusable component: 
+
       <div className={styles.contentBox}>
         <div className={styles.headingContainer}>
           <figure className={styles.iconContainer}>
@@ -66,7 +68,7 @@ function Content() {
             Upload
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
